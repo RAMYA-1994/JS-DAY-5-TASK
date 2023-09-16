@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+    class Uber{
+        constructor(distance,rate,waitingtime,location){
+            this.distance = distance;
+            this.rate = rate;
+            this.waitingtime = waitingtime;
+            this.location=location;
+
+        }
+        getTravelDetails(){
+            return(`the distance of the travel is ${this.distance}km with the rate${this.rate}with a waiting of period${this.waitingtime}mns and the locatio of ${this.location} nagar`)
+        }
+
+getPrice(){
+    let price = (this.distance*this.rate)+(10*this.waitingtime)
+    return price;
+
+}
+setDistance(long){
+    this.distance=long;
+
+}
+
+
+
+
+    }
+    let uber=new Uber(150,70,20,"TT")
+    uber.setDistance(90)
+    console.log(uber.getTravelDetails());
+    console.log(uber.getPrice());
+   </script> 
+</body>
+</html>

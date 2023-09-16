@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       class Person {
+  constructor(firstName, lastName, age, country, city) {
+    this.firstName = firstName
+    this.lastName = lastName
+    this.age = age
+    this.country = country
+    this.city = city
+  }
+  getInformation() {
+    
+    return (`he is the owner of the electrical shop ${this.firstName} and shop in ${this.country}`)
+  }
+}
+
+const person = new Person('dinesh', 'kumar', 33, 'karaikudi', 'tamilnadu')
+console.log(person.getInformation());
+ 
+        
+
+    </script>
+</body>
+</html>
